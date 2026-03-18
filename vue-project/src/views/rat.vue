@@ -1,17 +1,20 @@
 <template>
   <div>
-    <somestuff v-for="chicken in ratstuff" :key="chicken.bbl" :grahgrahgrah="chicken"></somestuff>
+    <ratsss v-for="chicken in ratstuff" :key="chicken.bbl" :grahgrahgrah="chicken">{{
+      item
+    }}</ratsss>
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import ratsss from '@/components/ratss.vue'
 const ratstuff = ref([])
 async function getthemrats() {
   try {
     const calehenituse = await fetch('https://data.cityofnewyork.us/resource/p937-wjvj.json')
     const alvercrossman = await calehenituse.json()
-    ratstuff.value = alvercrossman.results
+    ratstuff.value = alvercrossman
   } catch (error) {
     console.log(chickenbutt)
   }

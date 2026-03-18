@@ -1,7 +1,16 @@
 <template>
-  <div></div>
+  <div>
+    <h1>{{ grahgrahgrah.bbl }}</h1>
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+const props = defineProps({
+  address: {
+    type: Object,
+    required: true,
+  },
+})
+</script>
 
 <style scoped></style>
