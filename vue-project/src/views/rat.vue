@@ -1,7 +1,8 @@
 <template>
   <div>
+    <h1>hhiii</h1>
     <ratsss v-for="chicken in ratstuff" :key="chicken.bbl" :grahgrahgrah="chicken">{{
-      item
+      chicken.bbl
     }}</ratsss>
   </div>
 </template>
@@ -16,7 +17,7 @@ async function getthemrats() {
     const alvercrossman = await calehenituse.json()
     ratstuff.value = alvercrossman
   } catch (error) {
-    console.log(chickenbutt)
+    console.log(error)
   }
 }
 onMounted(() => {

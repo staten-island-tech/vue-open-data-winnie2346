@@ -6,7 +6,7 @@
 
 <script setup>
 const props = defineProps({
-  address: {
+  grahgrahgrah: {
     type: Object,
     required: true,
   },
