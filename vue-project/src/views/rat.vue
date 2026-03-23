@@ -1,9 +1,6 @@
 <template>
   <div>
-    <h1>hhiii</h1>
-    <ratsss v-for="chicken in ratstuff" :key="chicken.bbl" :grahgrahgrah="chicken">{{
-      chicken.bbl
-    }}</ratsss>
+    <ratsss v-for="chicken in ratstuff" :key="chicken.bbl" :grahgrahgrah="chicken"></ratsss>
   </div>
 </template>
 

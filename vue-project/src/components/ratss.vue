@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{ grahgrahgrah.bbl }}</h1>
+    <h1>{{ grahgrahgrah.inspection_type }}-{{ grahgrahgrah.borough }}-{{ grahgrahgrah.result }}</h1>
   </div>
 </template>
 
