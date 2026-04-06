@@ -1,5 +1,8 @@
 <template>
   <div>
+  <RouterLink to="/">Home</RouterLink> |
+      <RouterLink to="/bar">Bar Chart</RouterLink> |
+      <RouterLink to="/donut">Donut Chart</RouterLink>
     <ratsss v-for="chicken in ratstuff" :key="chicken.bbl" :grahgrahgrah="chicken"></ratsss>
   </div>
 </template>
@@ -7,6 +10,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import ratsss from '@/components/ratss.vue'
+
 const ratstuff = ref([])
 async function getthemrats() {
   try {
