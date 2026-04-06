@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { Bar } from 'vue-chartjs'
 import {
   Chart as ChartJS,
@@ -17,13 +17,19 @@ import {
 
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
 
-const props = defineProps({
-  rats: Array
-})
+const ratstuff = ref([])
+
+async function getthemrats() {
+  const res = await fetch('https://data.cityofnewyork.us/resource/p937-wjvj.json')
+  ratstuff.value = await res.json()
+}
+
+onMounted(getthemrats)
+
 const chartData = computed(() => {
   const counts = {}
 
-  props.rats.forEach(rat => {
+  ratstuff.value.forEach(rat => {
     const borough = rat.borough 
     counts[borough] = (counts[borough] || 0) + 1
   })

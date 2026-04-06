@@ -1,8 +1,6 @@
 <template>
   <div>
-  <RouterLink to="/">Home</RouterLink> |
-      <RouterLink to="/bar">Bar Chart</RouterLink> |
-      <RouterLink to="/donut">Donut Chart</RouterLink>
+  
     <ratsss v-for="chicken in ratstuff" :key="chicken.bbl" :grahgrahgrah="chicken"></ratsss>
   </div>
 </template>

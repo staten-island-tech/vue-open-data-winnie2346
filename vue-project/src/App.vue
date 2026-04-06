@@ -1,7 +1,8 @@
 <template>
-  <div><RouterView /> <RouterLink to="/">Home</RouterLink> |
+  <h2><RouterLink to="/">Home</RouterLink> |
       <RouterLink to="/bar">Bar Chart</RouterLink> |
-      <RouterLink to="/donut">Donut Chart</RouterLink></div>
+      <RouterLink to="/donut">Donut Chart</RouterLink></h2>
+  <div><RouterView /> </div>
  
 </template>
 
